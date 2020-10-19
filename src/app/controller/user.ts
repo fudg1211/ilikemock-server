@@ -9,8 +9,9 @@ import { BaseContrller } from '../../framework/baseController';
 @Router
 export default class HomeController extends BaseContrller {
   public async indexGet() {
-    this.ctx.body = await this.model.User.findAll();
-    console.log(22211122);
+    this.ctx.body = await this.model.Aaa.findAll();
   }
+
+  
 }
 
