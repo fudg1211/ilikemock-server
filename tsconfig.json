@@ -20,7 +20,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "inlineSourceMap": true,
-    "importHelpers": true
+    "importHelpers": true,
+    "typeRoots": ["./types"],
+    "types": ["node"]
   },
   "exclude": [
     "build",

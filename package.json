@@ -16,5 +16,8 @@
     "sequelize-cli-typescript": "^3.2.0c",
     "typescript": "^4.0.3"
   },
+  "scripts": {
+    "dev":"./node_modules/.bin/ts-node-dev src/index.ts"
+  },
   "devDependencies": {}
 }
