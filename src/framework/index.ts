@@ -5,10 +5,11 @@
 import * as http from 'http';
 import * as CP from 'child_process';
 import * as OS from 'os';
+import config from '../config';
 
 const cpuLength = OS.cpus().length;
 const server: http.Server = http.createServer();
-server.listen(3000);
+server.listen(config.sys.port);
 
 const workers = {};
 const maxRestartNum = 100;
@@ -72,3 +73,4 @@ process.on('exit', () => {
   });
 });
 
+console.log(1111);

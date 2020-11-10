@@ -9,5 +9,8 @@ export default {
     'database': 'ilikemock.com',
     'host': '127.0.0.1'
   },
+  'sys': {
+    port: 7000
+  }
 };
   

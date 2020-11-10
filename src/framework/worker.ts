@@ -31,10 +31,12 @@ import { mids } from './middleware';
 const router = new KoaRouter();
 const app = new Koa();
 
-router.get(routers[0]!.path, async (ctx) => {
-  routers[0].target.ctx = ctx;
-  routers[0].target.model = models;
-  await routers[0].action();
+routers.forEach((item) => {
+  router[item.method](item!.path, async (ctx) => {
+    item.target.ctx = ctx;
+    item.target.model = models;
+    await item.action();
+  });
 });
 
 
